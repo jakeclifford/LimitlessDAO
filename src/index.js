@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App.jsx";
 
-import { ThirdWeb3Provider, ThirdwebWeb3Provider } from '@3rdweb/hooks'
+import { ThirdwebWeb3Provider } from '@3rdweb/hooks'
 
 const supportedChainIds = [4]
 

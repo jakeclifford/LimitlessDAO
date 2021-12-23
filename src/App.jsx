@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react"
-import { BundleDropModule, ThirdwebSDK } from "@3rdweb/sdk";
+import { ThirdwebSDK } from "@3rdweb/sdk";
 import { useWeb3 } from "@3rdweb/hooks";
 import limitless from "./assets/limitless.png"
 import { ethers } from "ethers"
@@ -157,7 +157,7 @@ const App = () => {
   if (!address) {
     return ( 
       <div className="landing">
-        <img className="limitless" src={limitless} />
+        <img className="limitless" src={limitless} alt="limitless Logo"/>
         <h1 className="first"><span className="weare">We are</span> LimitlessDAO</h1>
           <button onClick={() => connectWallet("injected")} className="btn-hero">
             Connect your wallet 
@@ -169,7 +169,7 @@ const App = () => {
   if (hasClaimedNFT) {
     return (
       <div className="member-page">
-          <img className="limitless-sml" src={limitless} />
+          <img className="limitless-sml" src={limitless} alt="limitless Logo"/>
           <h1>LimitlessDAO </h1>
         <div>
           <div>
